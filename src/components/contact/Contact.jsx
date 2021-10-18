@@ -9,6 +9,7 @@ import { ThemeContext } from "../../context";
 const Contact = () => {
     const formRef = useRef();
     const [done, setDone] = useState(false);
+
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
 
@@ -84,7 +85,7 @@ const Contact = () => {
                             name="message"
                         />
                         <button>Submit</button>
-                        {done && "Thank you..."}
+                        {done && "Thank you!"}
                     </form>
                 </div>
             </div>
